@@ -18,9 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function (){
-    $films = DB::table('users')->get();
+    $users = DB::table('users')->get();
+    $user_name = Session::get('miSesionTexto');
+    $user_role = DB::table('users')->where('username', $user_name)->value('role');
 
-    return view('dashboard', compact('users'));
+    return view('dashboard.dashboard', compact('users','user_role'));
 });
 
 Route::post('/', function () {

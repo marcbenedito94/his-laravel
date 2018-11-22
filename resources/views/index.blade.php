@@ -5,6 +5,7 @@
     <body>
         <ul>
             <li><a href="/">Página inicio</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
             <li><a href="/paginados">Página dos</a></li>
             <li><a href="/paginatres">Página tres</a></li>
             <li><a href="/paginacuatro">Página cuatro</a></li>
